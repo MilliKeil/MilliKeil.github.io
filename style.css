@@ -1,0 +1,594 @@
+@font-face {
+  font-family: ClimateFont1979;
+  src: url("Fonts/ClimateCrisis-1979.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont1990;
+  src: url("Fonts/ClimateCrisis-1990.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2000;
+  src: url("Fonts/ClimateCrisis-2000.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2010;
+  src: url("Fonts/ClimateCrisis-2010.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2019;
+  src: url("Fonts/ClimateCrisis-2019.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2030;
+  src: url("Fonts/ClimateCrisis-2030.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2040;
+  src: url("Fonts/ClimateCrisis-2040.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2050;
+  src: url("Fonts/ClimateCrisis-2050.otf") format("opentype");
+}
+
+
+
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
+  
+/* Style for the header (seitliches Bar) */
+header {
+  position: fixed;
+  background-image: url('images/header.png');
+  background-size: cover; /* Adjust as needed */
+  font-weight: 300;
+  color: #000000;
+  flex-direction: column; /* Vertically stack items */
+  align-items: center;
+  padding: 1.5rem;
+  width: 150px; /* Adjust width */
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the side */
+}
+
+
+/*hyperlink style */
+/* a[href^="http://"]:not([href*="mysite.com"]),
+a[href^="https://"]:not([href*="mysite.com"]), 
+a[href^="//"]:not([href*="mysite.com"]) {
+  color: rgb(54, 155, 205);
+  cursor: url("images/explosion.png"), auto;
+} */
+a {
+  text-decoration: none; /* Remove the default underline */
+  color: #530a97; /* Change the link color to blue */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+a:visited {
+  color: #530a97; /* Change the color of visited links */
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Style for navigation links/sliders on the left */ 
+.nav-links ul{
+  padding: 0.5rem 0rem;
+  width: 1%; /* Adjust width */
+  height: 11rem; /*Adjust height to fill the viewport  */
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #000;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+  color: #bbadcc;
+  text-decoration: none;
+}
+
+/* Milli = Logo */
+.logo {
+  font-size: 2.5rem; 
+  font-family: 'Arsenal', sans-serif;
+  margin-bottom: 1rem;  /*Add margin to create space between logo and links */
+}
+
+.logo a {
+  text-decoration: none; /* Remove the default underline */
+  color: #bbadcc; /* Change the link color to blue */
+}
+
+.logo a:hover {
+  color: #fde100; /* Add underline on hover */
+}
+
+  footer {
+    position: relative;
+    font-weight: 300;
+    margin-top: auto;
+  }
+
+  footer p {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    margin: 0;
+  }
+  
+  header h1 {
+    font-family: 'ClimateFont1990', sans-serif;
+    margin: 0;
+    text-align: left
+  }
+
+  main h3 {
+    font-family: 'ClimateFont1990', sans-serif;
+    margin: 0;
+    text-align: left
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  main {
+    font-family: 'Roboto', sans-serif; /*main font!*/
+    font-weight: 300;
+    margin-left: 150px;
+    padding: 2rem;
+    text-align: justify;
+    text-align-last: none;
+    font-size: 1.1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-family: 'ClimateFont1990', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: auto;
+  }
+
+  .project img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  
+  /* image galleries within the project documents */
+  .image-gallery-projects-inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.1rem;
+  }
+
+  .image-gallery-projects-inside img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* whole picture is shown */
+    border-radius: 0.1rem;
+    transition: margin-right 2s ease-in-out .5s;
+  }
+  
+  .image-gallery-projects-inside video { /*same for video */
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* whole picture is shown */
+    border-radius: 0.1rem;
+    transition: margin-right 2s ease-in-out .5s;
+  }
+  
+  .image-gallery-projects-inside a:hover img { /* when clicking on the pictures */
+    transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+  }
+  
+  .image-gallery-projects-inside a:hover video { /* when clicking on the pictures */
+    transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+  }
+  
+
+  .right-aligned {
+    display: block; 
+    float: right;
+  }
+
+  .left-aligned {
+    display: block; 
+    float: left;
+  }
+
+  .center-aligned {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    z-index:0;
+  }
+  
+  .medium-size {
+    max-width: 45%;
+  }
+
+  .project p a{
+    text-decoration: underline overline #FF3028;
+    color: #000;
+    margin: 0.5rem 0;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: inherit;
+  }
+
+  .project p a:visited {
+    color: #000000; 
+  }
+
+
+.logo_style {
+  display: block; 
+  height: 20%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dashed;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+}
+
+div + div{
+  margin-bottom:20px;
+}
+
+/* CSS code for the image gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  gap: 2rem;
+  /* flex-direction: row; */
+}
+
+.image-gallery img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* whole picture is shown */
+  border-radius: 1px;
+  transition: margin-right 2s ease-in-out .5s;
+}
+
+.image-gallery video { /*same for video */
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* whole video is shown */
+  border-radius: 1px;
+  transition: margin-right 2s ease-in-out .5s;
+}
+
+.image-gallery a:hover img { /* when clicking on the pictures */
+  transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+}
+
+.image-gallery a:hover video { /* when clicking on the pictures */
+  transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+}
+
+
+/* Slideshow chickenandegg */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%; /* Adjust the max-width as needed */
+  width: 100%; /* Ensure it takes the full available width */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #3c3c3c;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:  #3c3c3c;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#stackoverflow {
+  width: 50%;
+  height: 50%;
+  object-fit: cover; /* whole video is shown */
+  border-radius: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nachwirken {
+  width: 94.3%;
+  height: 94.3%;
+  object-fit: cover; /* whole video is shown */
+  border-radius: 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* CSS image slideshow, https://stackoverflow.com/questions/53768473/css-image-slideshow-images-next-to-each-other */
+
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+#slider {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#container img {
+  width: 20%;
+  float: left;
+}
+
+#container {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slider infinite;
+}
+
+img {
+  display: block;
+  height: 50px;
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+
+
+/* chicken and egg imageslider */
+.gallery-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-gallery-chicken {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  animation: scrollGallery 10s ease-in 0s infinite alternate;
+}
+
+.images {
+  display: flex;
+  height: 500px;
+}
+
+@keyframes scrollGallery {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-110%);
+  }
+}
+
+
+
+/* changing climate fonts animation */
+#changing-heading {
+  font-family: 'ClimateFont1979', sans-serif;
+  font-weight: normal;
+  color: #000000;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+@keyframes changeFont {
+  0% {
+    font-family: 'ClimateFont1979', sans-serif;
+    color: #000000;
+  }
+  12.5% {
+    font-family: 'ClimateFont1990', sans-serif;
+    color: #000000;
+  }
+  37.5% {
+    font-family: 'ClimateFont2010', sans-serif;
+    color: #000000;
+  }
+  50% {
+    font-family: 'ClimateFont2019', sans-serif;
+    color: #000000;
+  }
+  62.5% {
+    font-family: 'ClimateFont2030', sans-serif;
+    color: #000000;
+  }
+  75% {
+    font-family: 'ClimateFont2040', sans-serif;
+    color: #000000;
+  }
+  100% {
+    font-family: 'ClimateFont2050', sans-serif;
+    color: #000000;
+  }
+}
+
+#changing-heading.change-font {
+  animation: changeFont 10s linear infinite;
+}
