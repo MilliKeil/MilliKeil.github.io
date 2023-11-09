@@ -550,7 +550,7 @@ img {
 
 
 
-/* changing climate fonts animation */
+/* changing climate fonts animation, add <h2 id="changing-heading"> to the heading that shall change*/
 #changing-heading {
   font-family: 'ClimateFont1979', sans-serif;
   font-weight: normal;
