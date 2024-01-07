@@ -31,6 +31,12 @@
   src: url("Fonts/ClimateCrisis-2050.otf") format("opentype");
 }
 
+@font-face {
+  font-family: ArchivoBlack;
+  src: url("Fonts/ArchivoBlack-Regular.ttf");
+}
+
+
 
 
 
@@ -139,13 +145,13 @@ a:visited {
   }
   
   header h1 {
-    font-family: 'ClimateFont1990', sans-serif;
+    font-family: 'ArchivoBlack', sans-serif;
     margin: 0;
     text-align: left
   }
 
   main h3 {
-    font-family: 'ClimateFont1990', sans-serif;
+    font-family: 'ArchivoBlack', sans-serif;
     margin: 0;
     text-align: left
   }
@@ -180,7 +186,7 @@ a:visited {
   }
   
   section h2 {
-    font-family: 'ClimateFont1990', sans-serif;
+    font-family: 'ArchivoBlack', sans-serif;
     font-weight: normal;
     font-size: 2rem;
     margin-bottom: 1rem;
