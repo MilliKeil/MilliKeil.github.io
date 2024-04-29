@@ -1,43 +1,12 @@
 @font-face {
-  font-family: ClimateFont1979;
-  src: url("Fonts/ClimateCrisis-1979.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont1990;
-  src: url("Fonts/ClimateCrisis-1990.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2000;
-  src: url("Fonts/ClimateCrisis-2000.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2010;
-  src: url("Fonts/ClimateCrisis-2010.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2019;
-  src: url("Fonts/ClimateCrisis-2019.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2030;
-  src: url("Fonts/ClimateCrisis-2030.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2040;
-  src: url("Fonts/ClimateCrisis-2040.otf") format("opentype");
-}
-@font-face {
-  font-family: ClimateFont2050;
-  src: url("Fonts/ClimateCrisis-2050.otf") format("opentype");
-}
-
-@font-face {
   font-family: ArchivoBlack;
   src: url("Fonts/ArchivoBlack-Regular.ttf");
 }
 
-
-
+@font-face {
+  font-family: CirrusCumulus;
+  src: url("Fonts/CirrusCumulus.ttf");
+}
 
 
  body {
@@ -117,8 +86,8 @@ a:visited {
 
 /* Milli = Logo */
 .logo {
-  font-size: 2.5rem; 
-  font-family: 'Arsenal', sans-serif;
+  font-size: 1.7rem; 
+  font-family: 'CirrusCumulus', sans-serif;
   margin-bottom: 1rem;  /*Add margin to create space between logo and links */
 }
 
@@ -145,15 +114,23 @@ a:visited {
   }
   
   header h1 {
-    font-family: 'ArchivoBlack', sans-serif;
+    font-family: 'CirrusCumulus', sans-serif;
     margin: 0;
     text-align: left
   }
 
   main h3 {
-    font-family: 'ArchivoBlack', sans-serif;
+    font-family: 'CirrusCumulus', sans-serif;
     margin: 0;
     text-align: left
+  }
+
+  main h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+    font-weight: 50;
   }
   
   nav ul {
@@ -186,7 +163,7 @@ a:visited {
   }
   
   section h2 {
-    font-family: 'ArchivoBlack', sans-serif;
+    font-family: 'CirrusCumulus', sans-serif;
     font-weight: normal;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -597,4 +574,47 @@ img {
 
 #changing-heading.change-font {
   animation: changeFont 10s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+/* Climate Crisis Font Stuff: */
+
+@font-face {
+  font-family: ClimateFont1979;
+  src: url("Fonts/ClimateCrisis-1979.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont1990;
+  src: url("Fonts/ClimateCrisis-1990.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2000;
+  src: url("Fonts/ClimateCrisis-2000.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2010;
+  src: url("Fonts/ClimateCrisis-2010.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2019;
+  src: url("Fonts/ClimateCrisis-2019.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2030;
+  src: url("Fonts/ClimateCrisis-2030.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2040;
+  src: url("Fonts/ClimateCrisis-2040.otf") format("opentype");
+}
+@font-face {
+  font-family: ClimateFont2050;
+  src: url("Fonts/ClimateCrisis-2050.otf") format("opentype");
 }
