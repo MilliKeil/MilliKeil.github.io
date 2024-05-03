@@ -21,7 +21,8 @@
 /* Style for the header (seitliches Bar) */
 header {
   position: fixed;
-  background-image: url('images/header.png');
+  /* background-image: url('images/header.png'); */
+  background-color: white;
   background-size: cover; /* Adjust as needed */
   font-weight: 300;
   color: #000000;
