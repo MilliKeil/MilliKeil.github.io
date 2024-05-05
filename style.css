@@ -33,7 +33,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the side */
+  box-shadow: 1px 0 10px #bbadcc; /* Optional: Add a shadow to the side */
 }
 
 
@@ -49,12 +49,12 @@ a {
   color: #530a97; /* Change the link color to blue */
 }
 
-a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
 a:visited {
   color: #530a97; /* Change the color of visited links */
+}
+
+a:hover {
+  color: #fde100;
 }
 
 .nav-links {
@@ -618,4 +618,54 @@ img {
 @font-face {
   font-family: ClimateFont2050;
   src: url("Fonts/ClimateCrisis-2050.otf") format("opentype");
+}
+
+
+
+/* mobile menu:  */
+
+#hamburger icon {
+  margin: auto 0; /*center it */
+  display: none;   /*hide it */
+  cursor: pointer; /*hide it */
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header{
+    display: none;
+  }
+
+  #hamburger-icon {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 0;
+    margin: 10px;
+  }
+  main{
+    margin-left: unset;
+  }
 }
