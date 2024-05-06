@@ -294,29 +294,28 @@ div + div{
 }
 
 .image-gallery img {
-  width: 350px;
-  height: 350px;
+  width: 800px;
+  height: 800px;
   object-fit: cover; /* whole picture is shown */
   border-radius: 1px;
   transition: margin-right 2s ease-in-out .5s;
 }
 
 .image-gallery video { /*same for video */
-  width: 350px;
-  height: 350px;
+  width: 800px;
+  height: 800px;
   object-fit: cover; /* whole video is shown */
   border-radius: 1px;
   transition: margin-right 2s ease-in-out .5s;
 }
 
 .image-gallery a:hover img { /* when clicking on the pictures */
-  transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+  transform: rotate(0.5turn); /*more convenient: scale(1.15, 1.15);*/
 }
 
 .image-gallery a:hover video { /* when clicking on the pictures */
-  transform: rotate(0.03turn); /*mor convenient: scale(1.15, 1.15);*/
+  transform: rotate(0.5turn); /*more convenient: scale(1.15, 1.15);*/
 }
-
 
 /* Slideshow chickenandegg */
 
@@ -436,71 +435,6 @@ div + div{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
-
-
-/* CSS image slideshow, https://stackoverflow.com/questions/53768473/css-image-slideshow-images-next-to-each-other */
-
-@keyframes slider {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-  75% {
-    margin-left: -300%;
-  }
-  95% {
-    margin-left: -300%;
-  }
-  100% {
-    margin-left: -400%;
-  }
-}
-
-#slider {
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-#container img {
-  width: 20%;
-  float: left;
-}
-
-#container {
-  position: fixed;
-  width: 100%;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slider infinite;
-}
-
-img {
-  display: block;
-  height: 50px;
-  float: left;
-  width: auto;
-  height: auto;
-}
-
 
 
 /* chicken and egg imageslider */
@@ -649,8 +583,16 @@ img {
 
 @media only screen and (orientation: portrait) {
   body{
-    padding: 0 5vw
+    padding: 0 5vw;
+    padding-top: 100px
   }
+
+  /* @Philipp: jetzt sind die einzelnen Projekte auch so weit unten... was tun? */
+  #projects{ 
+    padding: 0 2vw;
+    padding-top: 100px
+  }
+
   p{
     font-size: 1.5em;
   }
