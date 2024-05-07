@@ -295,7 +295,7 @@ div + div{
 
 .image-gallery img {
   /* filter: invert(1) brightness(60%);  */
-  /* filter: grayscale(100%) contrast(120%);  */
+  filter: grayscale(100%) contrast(120%); 
   width: 800px;
   height: 800px;
   object-fit: cover; /* whole picture is shown */
@@ -304,7 +304,7 @@ div + div{
 }
 
 .image-gallery video { /*same for video */
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
   width: 800px;
   height: 800px;
   object-fit: cover; /* whole video is shown */
@@ -313,13 +313,13 @@ div + div{
 }
 
 .image-gallery a:hover img { /* when clicking on the pictures */
-  /* filter: grayscale(0%); */
+  filter: grayscale(0%);
   /* transform: rotate(0.5turn); more convenient: scale(1.15, 1.15); */
   cursor: pointer;
 }
 
 .image-gallery a:hover video { /* when clicking on the pictures */
-  /* filter: grayscale(0%); */
+  filter: grayscale(0%);
   cursor: pointer;
 }
 
