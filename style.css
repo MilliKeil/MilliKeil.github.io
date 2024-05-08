@@ -207,7 +207,7 @@ a:hover {
     gap: 0.1rem;
   }
 
-  .image-gallery-projects-inside img {
+  .image-gallery-projects-inside img {   /*project images inside every project */
     width: 400px;
     height: 400px;
     object-fit: cover; /* whole picture is shown */
