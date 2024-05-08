@@ -295,7 +295,7 @@ div + div{
 
 .image-gallery img {
   /* filter: invert(1) brightness(60%);  */
-  filter: grayscale(100%) contrast(120%); 
+  /* filter: grayscale(100%) contrast(120%);  */
   width: 800px;
   height: 800px;
   object-fit: cover; /* whole picture is shown */
@@ -303,8 +303,25 @@ div + div{
   transition: margin-right 2s ease-in-out .5s;
 }
 
+.static-image {
+  z-index: 1; /* Ensure static image is above animated GIF */
+}
+
+.animated-gif {
+  display: none; /* Hide animated GIF by default */
+}
+
+.image-gallery:hover .static-image {
+  display: none; /* Hide static image when container is hovered */
+}
+
+.image-gallery:hover .animated-gif {
+  display: block; /* Show animated GIF when container is hovered */
+}
+
+
 .image-gallery video { /*same for video */
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   width: 800px;
   height: 800px;
   object-fit: cover; /* whole video is shown */
@@ -313,8 +330,7 @@ div + div{
 }
 
 .image-gallery a:hover img { /* when clicking on the pictures */
-  filter: grayscale(0%);
-  /* transform: rotate(0.5turn); more convenient: scale(1.15, 1.15); */
+  /* filter: grayscale(0%); */
   cursor: pointer;
 }
 
