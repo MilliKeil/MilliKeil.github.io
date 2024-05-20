@@ -307,18 +307,22 @@ div + div{
   z-index: 1; /* Ensure static image is above animated GIF */
 }
 
-.animated-gif {
-  display: none; /* Hide animated GIF by default */
+.onclick_image {
+  display: none;
 }
 
 .image-gallery:hover .static-image {
   display: none; /* Hide static image when container is hovered */
 }
 
-.image-gallery:hover .animated-gif {
+.image-gallery:hover .onclick_image {
   display: block; /* Show animated GIF when container is hovered */
 }
 
+.image-gallery a:hover img { /* when clicking on the pictures */
+  /* filter: grayscale(0%); */
+  cursor: pointer;
+}
 
 .image-gallery video { /*same for video */
   /* filter: grayscale(100%); */
@@ -329,10 +333,6 @@ div + div{
   transition: margin-right 2s ease-in-out .5s;
 }
 
-.image-gallery a:hover img { /* when clicking on the pictures */
-  /* filter: grayscale(0%); */
-  cursor: pointer;
-}
 
 .image-gallery a:hover video { /* when clicking on the pictures */
   filter: grayscale(0%);
