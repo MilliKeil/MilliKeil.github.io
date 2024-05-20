@@ -296,8 +296,8 @@ div + div{
 .image-gallery img {
   /* filter: invert(1) brightness(60%);  */
   /* filter: grayscale(100%) contrast(120%);  */
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   object-fit: cover; /* whole picture is shown */
   border-radius: 1px;
   transition: margin-right 2s ease-in-out .5s;
@@ -311,12 +311,12 @@ div + div{
   display: none;
 }
 
-.image-gallery:hover .static-image {
+.image-gallery a:hover > .static-image {
   display: none; /* Hide static image when container is hovered */
 }
 
-.image-gallery:hover .onclick_image {
-  display: block; /* Show animated GIF when container is hovered */
+.image-gallery a:hover > .onclick_image {
+  display: unset; /* Show animated GIF when container is hovered */
 }
 
 .image-gallery a:hover img { /* when clicking on the pictures */
