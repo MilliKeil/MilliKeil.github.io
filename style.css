@@ -33,8 +33,8 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: 1px 0 10px #bbadcc; /* Optional: Add a shadow to the side */
-}
+  box-shadow: 1px 0 0px #bbadcc; /*Optional: Add a shadow to the side */
+} */
 
 
 /*hyperlink style */
@@ -127,7 +127,6 @@ a:hover {
   }
 
   main h4 {
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: 0;
     text-align: left;
@@ -148,7 +147,6 @@ a:hover {
   }
   
   main {
-    font-family: 'Roboto', sans-serif; /*main font!*/
     font-weight: 300;
     margin-left: 150px;
     padding: 2rem;
