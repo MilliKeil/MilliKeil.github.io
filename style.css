@@ -198,13 +198,14 @@ a:hover {
   }
   
   /* image galleries within the project documents */
-
+  
   .image-gallery-projects-inside img {   /*project images inside every project */
     width: 400px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover; /* whole picture is shown */
     border-radius: 0.1rem;
-    transition: margin-right 2s ease-in-out .5s;
   }
   
   .image-gallery-projects-inside video { /*same for video */
@@ -212,7 +213,6 @@ a:hover {
     height: 400px;
     object-fit: cover; /* whole picture is shown */
     border-radius: 0.1rem;
-    transition: margin-right 2s ease-in-out .5s;
   }
   
   .image-gallery-projects-inside a:hover img { /* when clicking on the pictures */
@@ -235,7 +235,6 @@ a:hover {
   }
 
   .center-aligned {
-    display: block; 
     margin-left: auto;
     margin-right: auto;
     z-index:0;
@@ -571,13 +570,10 @@ div + div{
 
 @media only screen and (orientation: portrait) {
 
-  
   body{
     padding: 0 4vw;
     padding-top: 12vh
   }
-
-  /* @Philipp: jetzt sind die einzelnen Projekte auch so weit unten... was tun? */
 
   .project{
     padding: 0 0vw;

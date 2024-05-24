@@ -9,3 +9,5 @@ function toggleMobileMenu() {
     menu.innerText = "/|\\"
   }
 }
+
+
