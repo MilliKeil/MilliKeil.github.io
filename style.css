@@ -184,12 +184,20 @@ a:hover {
     margin-bottom: auto;
   }
 
-  .project img {
-    max-width: 70%;
+  .image-gallery-chicken img {
+     max-width: 70%;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
   }
-
+  .project{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10vh;
+  }
+  .project iframe{
+    width: 100%;
+  }
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -198,12 +206,15 @@ a:hover {
   }
   
   /* image galleries within the project documents */
-  
+  .image-gallery-projects-inside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    justify-items: center;
+  }
   .image-gallery-projects-inside img {   /*project images inside every project */
     width: 400px;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
     object-fit: cover; /* whole picture is shown */
     border-radius: 0.1rem;
   }
@@ -235,8 +246,6 @@ a:hover {
   }
 
   .center-aligned {
-    margin-left: auto;
-    margin-right: auto;
     z-index:0;
   }
   
@@ -271,9 +280,9 @@ a:hover {
   border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
 }
 
-div + div{
+/* div + div{
   margin-bottom:20px;
-}
+} */
 
 /* CSS code for the image gallery */
 .image-gallery {
@@ -630,7 +639,7 @@ div + div{
   .nav-links a {
     color: #000;
     font-size: 3.5rem;
-  }
+  } 
   main{
     margin-left: unset;
   }
