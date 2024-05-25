@@ -175,9 +175,10 @@ a:hover {
     flex-direction: column;
     gap: 30px;
     margin-bottom: 10vh;
+    align-items: center;
   }
-  .project iframe{
-    width: 100%;
+  .project > iframe,img{
+    width: 80%;
   }
   .image-gallery {
     display: flex;
@@ -190,7 +191,7 @@ a:hover {
   .image-gallery-projects-inside{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    gap: 40px;
     justify-items: center;
   }
   .image-gallery-projects-inside img {   /*project images inside every project */
@@ -283,7 +284,18 @@ a:hover {
 }
 
 .image-gallery a:hover > .onclick_image {
-  display: unset; /* Show animated GIF when container is hovered */
+  display: unset; 
+}
+.image-gallery a p{
+  text-align: right;
+  margin-top: 0;
+  opacity: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: small;
+}
+.image-gallery a:hover p {
+  opacity: 1;
 }
 
 .image-gallery a:hover img { /* when clicking on the pictures */
@@ -482,6 +494,10 @@ a:hover {
     grid-column: unset; 
     height: 100%;
 height: auto;  
+}
+.image-gallery img{
+  width: 100%;
+  height: unset;
 }
   p{
     font-size: 2.3em;
