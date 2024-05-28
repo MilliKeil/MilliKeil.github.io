@@ -165,7 +165,9 @@ a:hover {
   }
 
   .image-gallery-chicken img {
-     max-width: 70%;
+    max-width: 70%;
+    width: 400px;
+    height: 600px;
     height: auto;
     margin-bottom: 2rem; 
   }
