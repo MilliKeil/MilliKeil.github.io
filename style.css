@@ -563,7 +563,6 @@ img.two-col {
   }
 
   .image-gallery-projects-inside img {
-    /*images? */
     width: 100%;
     object-fit: unset;
     height: auto;
@@ -578,6 +577,10 @@ img.two-col {
   .image-gallery img {
     width: 100%;
     height: unset;
+  }
+
+  .nav-button {
+    font-size: 2.3em;
   }
 
   p {
