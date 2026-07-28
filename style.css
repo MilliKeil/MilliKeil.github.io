@@ -9,7 +9,7 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column
 }
 
 /* Style for the header (seitliches Bar) */
@@ -20,7 +20,7 @@ header {
   background-size: cover;
   /* Adjust as needed */
   font-weight: 300;
-  color: #000000;
+  color: black;
   flex-direction: column;
   /* Vertically stack items */
   align-items: center;
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: #000;
+  color: black;
   margin: 0.5rem 0;
   font-size: 1.2rem;
 }
@@ -136,7 +136,7 @@ nav ul {
 
 
 nav ul li a {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 
@@ -276,7 +276,7 @@ img.two-col {
 
 .project p a {
   text-decoration: underline overline #FF3028;
-  color: #000;
+  color: black;
   margin: 0.5rem 0;
   font-size: 3rem;
   display: flex;
@@ -287,7 +287,7 @@ img.two-col {
 }
 
 .project p a:visited {
-  color: #000000;
+  color: black;
 }
 
 
