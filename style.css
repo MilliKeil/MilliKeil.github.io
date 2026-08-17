@@ -308,19 +308,17 @@ img.two-col {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
-  /* flex-direction: row; */
 }
 
 .image-gallery img {
-  /* filter: invert(1) brightness(60%);  */
-  /* filter: grayscale(100%) contrast(120%);  */
-  width: 600px;
-  height: 600px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   /* whole picture is shown */
   border-radius: 1px;
   transition: margin-right 2s ease-in-out .5s;
 }
+
 
 .static-image {
   z-index: 1;
@@ -379,9 +377,9 @@ img.two-col {
 
 /* Slideshow chickenandegg */
 
-* {
+/* * {
   box-sizing: border-box
-}
+} */
 
 /* Slideshow container */
 .slideshow-container {
