@@ -344,7 +344,7 @@ img.two-col {
   opacity: 0;
   font-family: 'Roboto', sans-serif;
   color: black;
-  font-size: small;
+  font-size: x-small;
 }
 
 .image-gallery a:hover p {
