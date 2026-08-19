@@ -220,12 +220,22 @@ img {
   color: #fde100;
 }
 
+.portrait-wrapper{
+  margin: 0;
+}
+
 .portrait {
   width: 200px;
   height: auto;
   max-width: 200px;
   object-fit: cover;
   border-radius: 0%;
+}
+
+.portrait-wrapper figcaption {
+  font-size: 0.6rem;
+  color: #999;
+  text-align: left;
 }
 
 .image-gallery {
