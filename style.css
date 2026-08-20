@@ -9,7 +9,8 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  text-wrap: balance;
 }
 
 /* Style for the header (seitliches Bar) */
@@ -198,13 +199,27 @@ form label {
 
 .project>iframe,
 img {
-  width: 80%;
+  width: 100%;
 }
 
-.about-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
+@media (min-width: 768px) {
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .portrait {
+  width: 200px;
+  height: auto;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 0%;
+  }
+  .project>iframe,
+  img {
+    width: 80%;
+  }
+
 }
 
 .about-text {
@@ -224,14 +239,6 @@ img {
 
 .portrait-wrapper{
   margin: 0;
-}
-
-.portrait {
-  width: 200px;
-  height: auto;
-  max-width: 200px;
-  object-fit: cover;
-  border-radius: 0%;
 }
 
 .portrait-wrapper figcaption {
