@@ -202,7 +202,7 @@ img {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media screen and (orientation: landscape) {
   .about-content {
     display: flex;
     align-items: flex-start;
@@ -361,7 +361,7 @@ img.two-col {
 .image-gallery a {
   min-width: 0;
 }
-@media (min-width: 768px) {
+@media screen and (orientation: landscape) {
   .image-gallery a div {
     width: 200px;
   }
